@@ -18,7 +18,6 @@ class PersonListTableViewController: UITableViewController {
     
     @IBAction func randomizeButtonTapped(_ sender: Any) {
         randomizePersons()
-        
     }
     @IBAction func addPersonButtonTapped(_ sender: Any) {
         addNewPersonAlertController()
@@ -41,12 +40,9 @@ class PersonListTableViewController: UITableViewController {
         present(alertController, animated: true)
     }
     
-    
-    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 5
         //PersonController.sharedInstance.persons.count / Int(2.rounded()+1)
     }
@@ -58,10 +54,6 @@ class PersonListTableViewController: UITableViewController {
         }
         return personsArray.count
     }
-    
-    //[Joe.group = 5, Sally.group = 2, Jim.group = 2, Frank.group = 3]
-    // [Sally.group = 2, Jim.group = 2]
-    // indexPath.section = 2, indexPath.row = 0
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         let personsArray = PersonController.sharedInstance.persons.filter { person in
@@ -72,25 +64,19 @@ class PersonListTableViewController: UITableViewController {
         
         return cell
     }
-    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Group \(section + 1)"
     }
     
-    // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
     func randomizePersons(){
         // this will be called in the randomizeButtonTapped function on the viewController
-        
-        
-        
         
         PersonController.sharedInstance.savePersistenceStore()
     }

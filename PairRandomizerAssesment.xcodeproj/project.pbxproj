@@ -15,9 +15,6 @@
 		C0899D352658095400631FD2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D342658095400631FD2 /* Person.swift */; };
 		C0899D3726580B6300631FD2 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D3626580B6300631FD2 /* PersonController.swift */; };
 		C0899D3926580BD800631FD2 /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D3826580BD800631FD2 /* PersonListTableViewController.swift */; };
-		C0899D3B26580C2E00631FD2 /* PersonPairTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D3A26580C2E00631FD2 /* PersonPairTableViewCell.swift */; };
-		C0899D3D265818E000631FD2 /* PersonPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D3C265818E000631FD2 /* PersonPair.swift */; };
-		C0899D3F26581AD500631FD2 /* PersonPairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D3E26581AD500631FD2 /* PersonPairController.swift */; };
 		C0899D422658284F00631FD2 /* PersonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0899D412658284F00631FD2 /* PersonError.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +29,6 @@
 		C0899D342658095400631FD2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C0899D3626580B6300631FD2 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 		C0899D3826580BD800631FD2 /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
-		C0899D3A26580C2E00631FD2 /* PersonPairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPairTableViewCell.swift; sourceTree = "<group>"; };
-		C0899D3C265818E000631FD2 /* PersonPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPair.swift; sourceTree = "<group>"; };
-		C0899D3E26581AD500631FD2 /* PersonPairController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPairController.swift; sourceTree = "<group>"; };
 		C0899D412658284F00631FD2 /* PersonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				C0899D342658095400631FD2 /* Person.swift */,
-				C0899D3C265818E000631FD2 /* PersonPair.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,17 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				C0899D2C265807AB00631FD2 /* Storyboards */,
-				C0899D2B265807A300631FD2 /* Custom Views */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C0899D2B265807A300631FD2 /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-				C0899D3A26580C2E00631FD2 /* PersonPairTableViewCell.swift */,
-			);
-			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		C0899D2C265807AB00631FD2 /* Storyboards */ = {
@@ -144,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				C0899D3626580B6300631FD2 /* PersonController.swift */,
-				C0899D3E26581AD500631FD2 /* PersonPairController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -231,11 +214,8 @@
 				C0899D3926580BD800631FD2 /* PersonListTableViewController.swift in Sources */,
 				C0899D152658071D00631FD2 /* AppDelegate.swift in Sources */,
 				C0899D352658095400631FD2 /* Person.swift in Sources */,
-				C0899D3F26581AD500631FD2 /* PersonPairController.swift in Sources */,
 				C0899D422658284F00631FD2 /* PersonError.swift in Sources */,
-				C0899D3B26580C2E00631FD2 /* PersonPairTableViewCell.swift in Sources */,
 				C0899D172658071D00631FD2 /* SceneDelegate.swift in Sources */,
-				C0899D3D265818E000631FD2 /* PersonPair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
